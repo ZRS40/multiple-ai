@@ -79,9 +79,8 @@ def main():
     entree = np.array(range(1, 10000), dtype=dtype)
     sortie = 2 * entree
 
-    # Normalisation basée sur la valeur max de l'entrée et la sortie (2 * max entrée)
     max_entree = np.max(entree)
-    max_sortie = 2 * max_entree
+    max_sortie = np.max(sortie)
 
     entree_norm = entree / max_entree
     sortie_norm = sortie / max_sortie
